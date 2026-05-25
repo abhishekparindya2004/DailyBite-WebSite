@@ -1,0 +1,129 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DailyBite — Cart</title>
+  <link rel="icon" href="images/logo.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="cart">
+<div class="topbar">
+  <div class="wrap">
+    <div class="row">
+     
+    </div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <div class="row">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="DailyBite logo">
+        <div>
+          <strong>DailyBite</strong>
+          <span>Food selling website • demo</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="" href="index.html">Home</a>
+        <a class="" href="menu.html">Menu</a>
+        <a class="" href="deals.html">Deals</a>
+        <a class="active" href="cart.html">Cart</a>
+        <a class="" href="admin.html">Admin</a>
+      </nav>
+
+      <div class="actions">
+        <a class="icon-btn" href="cart.html" title="Cart" aria-label="Cart">
+          🛒 <span class="count" id="cartCount">0</span>
+        </a>
+        <button class="icon-btn hamburger" id="hamburger" title="Menu" aria-label="Open menu">☰</button>
+        <a class="primary" href="menu.html">Order Now</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+<section class="section">
+  <div class="wrap">
+    <div class="page-head">
+      <h2>Your Cart</h2>
+      <p class="lead">Change quantities and place your demo order.</p>
+    </div>
+
+    <div id="cartRoot">
+    <div class="cart">
+      <div class="row head">
+        <div>Item</div><div>Price</div><div>Qty</div><div></div>
+      </div>
+      <div class="row"><div style="grid-column:1/-1;color:var(--muted);font-weight:800">Your cart is empty. Go to Menu and add something 🔥</div></div>
+    </div>
+  
+    <div class="cart-summary">
+      <div class="summary">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div style="font-weight:900;font-size:16px">Summary</div>
+          <div class="pill">Demo Checkout</div>
+        </div>
+        <div class="line"><span>Subtotal</span><strong>Rs. 0</strong></div>
+        <div class="line"><span>Delivery</span><strong>Rs. 0</strong></div>
+        <div class="line total"><span><strong>Total</strong></span><strong>Rs. 0</strong></div>
+        <div class="actions" style="margin-top:12px">
+          <button class="primary" id="checkoutBtn" disabled="">Place Order</button>
+        </div>
+        <div style="margin-top:10px;color:var(--muted);font-size:12px;font-weight:700">
+          Orders are stored locally in your browser (localStorage).
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div style="margin-top:16px; color: var(--muted); font-weight:700; font-size: 12px">
+      Note: This is a front-end demo — no real payments.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <img src="images/logo.svg" alt="logo" style="height:46px">
+          <div>
+            <div style="font-weight:900; font-size:16px">DailyBite</div>
+            <div style="color: rgba(255,255,255,.72); font-weight:700; font-size:12px">Food • Fast • Fresh</div>
+          </div>
+        </div>
+       
+        <div class="tiny">© 2026 DailyBite PVT &amp; LTD</div>
+      </div>
+      <div>
+        <div style="font-weight:900; margin-bottom:10px">Quick Links</div>
+        <div style="display:flex; flex-direction:column; gap:8px">
+          <a href="menu.html">Menu</a>
+          <a href="deals.html">Deals</a>
+          <a href="cart.html">Cart</a>
+          <a href="admin.html">Admin</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-weight:900; margin-bottom:10px">Contact</div>
+        <div style="display:flex; flex-direction:column; gap:8px">
+          <a href="tel:0760000000">076 000 0000</a>
+          <a href="#">support@dailybite.demo</a>
+          <a href="#">No. 77, Food Street, Colombo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="app.js"></script>
+
+
+
+</body></html>

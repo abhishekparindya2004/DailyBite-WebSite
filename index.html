@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DailyBite — Home</title>
+  <link rel="icon" href="images/logo.svg">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .product .img{
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      border-radius: 16px 16px 0 0;
+      background: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .product .img img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+</head>
+<script src="app.js"></script>
+<body data-page="home">
+
+  <div class="topbar">
+    <div class="wrap">
+      <div class="row">
+        <!-- Topbar content can go here -->
+      </div>
+    </div>
+  </div>
+
+  <header class="site">
+    <div class="wrap">
+      <div class="row">
+        <a class="brand" href="index.html">
+          <img src="images/logo.svg" alt="DailyBite logo">
+          <div>
+            <strong>DailyBite</strong>
+            <span>Food selling website • demo</span>
+          </div>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="active" href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="deals.html">Deals</a>
+          <a href="cart.html">Cart</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+
+        <div class="actions">
+          <a class="icon-btn" href="cart.html" title="Cart" aria-label="Cart">
+            🛒 <span class="count" id="cartCount">1</span>
+          </a>
+          <button class="icon-btn hamburger" id="hamburger" title="Menu" aria-label="Open menu">☰</button>
+          <a class="primary" href="menu.html">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="card hero-main">
+          <div>
+            <h1>Business-class taste.<br>Student-class speed.</h1>
+            <p>Order your favourites in seconds. Add to cart, place order, and track orders from Admin (all demo — saved locally).</p>
+            <div class="cta">
+              <a class="btn light" href="menu.html">Browse Menu</a>
+              <a class="btn ghost" href="deals.html">View Deals</a>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap; opacity:.95; font-weight:800">
+            <span class="badge" style="background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.22)">
+              <span class="dot"></span> Free delivery over Rs. 5,000
+            </span>
+            <span class="badge" style="background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.22)">
+              <span class="dot" style="background: var(--gold); box-shadow: 0 0 0 4px rgba(245,158,11,.18)"></span> Rated 4.8/5
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Featured</h2>
+      <p class="lead">Popular items customers order again and again.</p>
+
+      <div class="grid" id="featuredGrid">
+        <div class="product">
+          <div class="img">
+            <img src="images/classic Cheese Pizza.jpeg" alt="Classic Cheese Pizza">
+          </div>
+          <div class="body">
+            <div class="tag"><span>Pizza</span><span>Best Seller</span></div>
+            <div style="font-weight:900">Classic Cheese Pizza</div>
+            <div style="color:var(--muted); font-weight:600; font-size:13px">Freshly prepared • Delivery &amp; pickup</div>
+            <div class="price-row">
+              <div class="price">Rs. 1,890</div>
+              <button class="add" data-add="p1">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="img">
+            <img src="images/pepperoni pizza.jpeg" alt="Pepperoni Pizza">
+          </div>
+          <div class="body">
+            <div class="tag"><span>Pizza</span><span>Hot Deal</span></div>
+            <div style="font-weight:900">Pepperoni Pizza</div>
+            <div style="color:var(--muted); font-weight:600; font-size:13px">Freshly prepared • Delivery &amp; pickup</div>
+            <div class="price-row">
+              <div class="price">Rs. 2,290</div>
+              <button class="add" data-add="p2">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="img">
+            <img src="images/chicken Burger.png" alt="Chicken Burger">
+          </div>
+          <div class="body">
+            <div class="tag"><span>Burgers</span><span>New</span></div>
+            <div style="font-weight:900">Chicken Burger</div>
+            <div style="color:var(--muted); font-weight:600; font-size:13px">Freshly prepared • Delivery &amp; pickup</div>
+            <div class="price-row">
+              <div class="price">Rs. 1,290</div>
+              <button class="add" data-add="p3">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="img">
+            <img src="images/iced Lemon Tea.png" alt="Iced Lemon Tea">
+          </div>
+          <div class="body">
+            <div class="tag"><span>Drinks</span><span>Fresh</span></div>
+            <div style="font-weight:900">Iced Lemon Tea</div>
+            <div style="color:var(--muted); font-weight:600; font-size:13px">Freshly prepared • Delivery &amp; pickup</div>
+            <div class="price-row">
+              <div class="price">Rs. 490</div>
+              <button class="add" data-add="p8">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Trending</h2>
+      <p class="lead">Quick picks for lunch breaks.</p>
+
+      <div class="grid" id="trendingGrid">
+        <div class="product">
+          <div class="img">
+            <img src="images/chicken Kottu.jpeg" alt="Chicken Kottu">
+          </div>
+          <div class="body">
+            <div class="tag"><span>Sri Lankan</span><span>Local Fav</span></div>
+            <div style="font-weight:900">Chicken Kottu</div>
+            <div style="color:var(--muted); font-weight:600; font-size:13px">Freshly prepared • Delivery &amp; pickup</div>
+            <div class="price-row">
+              <div class="price">Rs. 1,590</div>
+              <button class="add" data-add="p5">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="img">
+            <img src="images/seafood Fried Rice.png" alt="Seafood Fried Rice">
+          </div>
+          <div class="body">
+            <div class="tag"><span>Sri Lankan</span><span>Chef Pick</span></div>
+            <div style="font-weight:900">Seafood Fried Rice</div>
+            <div style="color:var(--muted); font-weight:600; font-size:13px">Freshly prepared • Delivery &amp; pickup</div>
+            <div class="price-row">
+              <div class="price">Rs. 1,790</div>
+              <button class="add" data-add="p6">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="img">
+            <img src="images/chocolate Brownie.jpeg" alt="Chocolate Brownie">
+          </div>
+          <div class="body">
+            <div class="tag"><span>Desserts</span><span>Sweet</span></div>
+            <div style="font-weight:900">Chocolate Brownie</div>
+            <div style="color:var(--muted); font-weight:600; font-size:13px">Freshly prepared • Delivery &amp; pickup</div>
+            <div class="price-row">
+              <div class="price">Rs. 890</div>
+              <button class="add" data-add="p7">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="img">
+            <img src="images/iced Lemon Tea.png" alt="Iced Lemon Tea">
+          </div>
+          <div class="body">
+            <div class="tag"><span>Drinks</span><span>Fresh</span></div>
+            <div style="font-weight:900">Iced Lemon Tea without sugar</div>
+            <div style="color:var(--muted); font-weight:600; font-size:13px">Freshly prepared • Delivery &amp; pickup</div>
+            <div class="price-row">
+              <div class="price">Rs. 490</div>
+              <button class="add" data-add="p8">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <div style="display:flex;align-items:center;gap:10px">
+            <img src="images/logo.svg" alt="DailyBite logo" style="height:46px">
+            <div>
+              <div style="font-weight:900; font-size:16px">DailyBite</div>
+              <div style="color: rgba(255,255,255,.72); font-weight:700; font-size:12px">Food • Fast • Fresh</div>
+            </div>
+          </div>
+
+          <div class="tiny">© 2026 DailyBite. PVT &amp; LTD</div>
+        </div>
+
+        <div>
+          <div style="font-weight:900; margin-bottom:10px">Quick Links</div>
+          <div style="display:flex; flex-direction:column; gap:8px">
+            <a href="menu.html">Menu</a>
+            <a href="deals.html">Deals</a>
+            <a href="cart.html">Cart</a>
+            <a href="admin.html">Admin</a>
+          </div>
+        </div>
+
+        <div>
+          <div style="font-weight:900; margin-bottom:10px">Contact</div>
+          <div style="display:flex; flex-direction:column; gap:8px">
+            <a href="tel:0760000000">076 000 0000</a>
+            <a href="mailto:support@dailybite.demo">support@dailybite.demo</a>
+            <a href="#">No. 77, Food Street, Colombo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <div class="t" id="toastTitle">Update</div>
+    <div class="m" id="toastMsg">...</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
